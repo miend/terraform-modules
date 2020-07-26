@@ -41,4 +41,8 @@ resource "null_resource" "cluster_authentication" {
   provisioner "local-exec" {
     command = "gcloud container clusters get-credentials --region ${var.region} ${var.cluster_name}"
   }
+
+  depends_on = [
+    module.gke_cluster,
+  ]
 }

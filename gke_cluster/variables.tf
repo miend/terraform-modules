@@ -10,6 +10,11 @@ variable "location" {
   type        = string
 }
 
+variable "region" {
+  description = "The region of the GKE cluster."
+  type        = string
+}
+
 ### Required Inputs From Other Modules ###
 
 variable "network" {

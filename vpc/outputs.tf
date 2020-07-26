@@ -1,15 +1,15 @@
 output "network" {
-  value = "vpc_network.network"
+  value = module.vpc_network.network
 }
 
 output "subnetwork" {
-  value = "vpc_network.subnetwork"
+  value = module.vpc_network.public_subnetwork
 }
 
 output "public_subnetwork_secondary_range_name" {
-  value = "vpc_network.public_subnetwork_secondary_range_name"
+  value = module.vpc_network.public_subnetwork_secondary_range_name
 }
 
 output "private" {
-  value = "vpc_network.private"
+  value = module.vpc_network.private
 }
