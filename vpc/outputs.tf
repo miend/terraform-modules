@@ -2,7 +2,7 @@ output "network" {
   value = module.vpc_network.network
 }
 
-output "subnetwork" {
+output "public_subnetwork" {
   value = module.vpc_network.public_subnetwork
 }
 
